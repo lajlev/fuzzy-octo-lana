@@ -1,0 +1,26 @@
+section.featured {
+  @include wrap;
+  padding-top: 216px;
+  height: 677px;
+  background-image: url(/images/profile.jpg);
+  text-align: center;
+
+  p {
+    color: #fff;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  a.subtle {
+    margin-top: 215px ;
+    padding: 14px 14px;
+
+    span.arrow {
+      background-image: url(/images/down_arrow.png);
+      width: 14px;
+      height: 10px;
+      display: inline-block;
+    }
+  }
+}

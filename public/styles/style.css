@@ -1,0 +1,288 @@
+/* Layout
+================================================== */
+/* line 5, _2.layout.scss */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 27, _2.layout.scss */
+.wrap {
+  max-width: 1020px;
+  margin: 0 auto; }
+
+/* line 31, _2.layout.scss */
+body > section {
+  max-width: 1020px;
+  margin: 0 auto; }
+
+/* Base
+================================================== */
+/* line 4, _1.base.scss */
+html, body, div, form, fieldset, legend, label {
+  margin: 0;
+  padding: 0; }
+
+/* line 8, _1.base.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 12, _1.base.scss */
+th, td {
+  text-align: left;
+  vertical-align: top; }
+
+/* line 16, _1.base.scss */
+h1, h2, h3, h4, h5, h6, th, td, caption {
+  font-weight: normal; }
+
+/* line 18, _1.base.scss */
+img {
+  border: 0; }
+
+/* line 21, _1.base.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 25, _1.base.scss */
+body {
+  font-size: 13px;
+  font-family: "Ubuntu", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: white;
+  color: #211e1f; }
+
+/* line 32, _1.base.scss */
+p {
+  margin-top: 0; }
+
+/* line 36, _1.base.scss */
+a {
+  color: #00a3cc; }
+
+/* line 39, _1.base.scss */
+.tac {
+  text-align: center;
+  width: 100%; }
+
+/* line 44, _1.base.scss */
+.highlighted {
+  background: #f2f6f7;
+  text-align: center;
+  padding-bottom: 70px; }
+  /* line 13, _2.layout.scss */
+  .highlighted:before, .highlighted:after {
+    content: "";
+    display: table; }
+  /* line 17, _2.layout.scss */
+  .highlighted:after {
+    clear: both; }
+  /* line 50, _1.base.scss */
+  .highlighted p {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 60px; }
+
+/* line 58, _1.base.scss */
+h2 {
+  font-weight: bold;
+  font-size: 13px;
+  color: #211e1f;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 5px 3px;
+  border-bottom: 2px solid #211e1f;
+  margin: 80px 0 60px; }
+
+/* States
+================================================== */
+/* Themes
+================================================== */
+/* Buttons
+================================================== */
+/* line 5, modules/_btn.scss */
+.btn {
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  background: #00a3cc;
+  padding: 14px 24px;
+  cursor: pointer; }
+  /* line 16, modules/_btn.scss */
+  .btn.alt {
+    background: #f25b5a; }
+    /* line 19, modules/_btn.scss */
+    .btn.alt:hover {
+      background: #f14d4c; }
+  /* line 24, modules/_btn.scss */
+  .btn.subtle {
+    background: rgba(255, 255, 255, 0.3); }
+    /* line 27, modules/_btn.scss */
+    .btn.subtle:hover {
+      background: rgba(255, 255, 255, 0.4); }
+
+/* line 1, modules/_tiles.scss */
+.tiles {
+  list-style-type: none;
+  padding: 0; }
+  /* line 13, _2.layout.scss */
+  .tiles:before, .tiles:after {
+    content: "";
+    display: table; }
+  /* line 17, _2.layout.scss */
+  .tiles:after {
+    clear: both; }
+  /* line 7, modules/_tiles.scss */
+  .tiles li {
+    float: left;
+    text-align: center; }
+    /* line 11, modules/_tiles.scss */
+    .tiles li a {
+      display: block;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold; }
+      /* line 17, modules/_tiles.scss */
+      .tiles li a img {
+        display: block;
+        border-radius: 3px; }
+
+/* line 25, modules/_tiles.scss */
+.large-tiles {
+  margin: 0 40px 50px 40px; }
+  /* line 28, modules/_tiles.scss */
+  .large-tiles li {
+    margin-right: 20px;
+    margin-bottom: 30px; }
+    /* line 32, modules/_tiles.scss */
+    .large-tiles li:nth-child(4n+4) {
+      margin-right: 0; }
+    /* line 36, modules/_tiles.scss */
+    .large-tiles li a {
+      margin-bottom: 10px; }
+      /* line 39, modules/_tiles.scss */
+      .large-tiles li a img {
+        margin-bottom: 30px; }
+
+/* line 46, modules/_tiles.scss */
+.small-tiles {
+  margin: 0 40px 120px 40px; }
+  /* line 48, modules/_tiles.scss */
+  .small-tiles li {
+    margin-right: 122px; }
+    /* line 51, modules/_tiles.scss */
+    .small-tiles li:last-child {
+      margin-right: 0; }
+  /* line 56, modules/_tiles.scss */
+  .small-tiles a {
+    height: 90px;
+    width: 90px;
+    border-radius: 3px;
+    text-indent: -9999px;
+    background: url("/images/sprite_social_icons.png") 0 0 no-repeat; }
+  /* line 64, modules/_tiles.scss */
+  .small-tiles .instagram {
+    background-color: #3f729b;
+    background-position: -10px -10px; }
+  /* line 65, modules/_tiles.scss */
+  .small-tiles .dribbble {
+    background-color: #ea4c89;
+    background-position: -110px -10px; }
+  /* line 66, modules/_tiles.scss */
+  .small-tiles .tumblr {
+    background-color: #2c4762;
+    background-position: -210px -10px; }
+  /* line 67, modules/_tiles.scss */
+  .small-tiles .skype {
+    background-color: #00aff0;
+    background-position: -310px -10px; }
+  /* line 68, modules/_tiles.scss */
+  .small-tiles .zerply {
+    background-color: #8db976;
+    background-position: -410px -10px; }
+
+/* line 1, modules/_header.scss */
+body > header {
+  max-width: 1020px;
+  margin: 0 auto; }
+
+/* line 5, modules/_header.scss */
+body > header, body > footer {
+  padding: 28px 40px 28px; }
+  /* line 13, _2.layout.scss */
+  body > header:before, body > header:after, body > footer:before, body > footer:after {
+    content: "";
+    display: table; }
+  /* line 17, _2.layout.scss */
+  body > header:after, body > footer:after {
+    clear: both; }
+  /* line 9, modules/_header.scss */
+  body > header a.logo, body > footer a.logo {
+    display: block;
+    width: 70px;
+    float: left; }
+  /* line 15, modules/_header.scss */
+  body > header nav, body > footer nav {
+    float: right; }
+    /* line 18, modules/_header.scss */
+    body > header nav a, body > footer nav a {
+      font-weight: bold;
+      font-size: 13px;
+      color: #211e1f;
+      text-decoration: none;
+      text-transform: uppercase;
+      margin-right: 35px;
+      display: inline-block;
+      padding: 5px 3px; }
+      /* line 30, modules/_header.scss */
+      body > header nav a:hover, body > header nav a.current, body > footer nav a:hover, body > footer nav a.current {
+        color: #00a3cc;
+        border-bottom: 2px solid #00a3cc; }
+      /* line 35, modules/_header.scss */
+      body > header nav a:last-child, body > footer nav a:last-child {
+        margin-right: 0; }
+
+/* line 1, modules/_footer.scss */
+body > footer {
+  width: 100%;
+  background: #000; }
+  /* line 5, modules/_footer.scss */
+  body > footer span.copyright {
+    font-weight: bold;
+    color: #fff; }
+  /* line 11, modules/_footer.scss */
+  body > footer nav a {
+    color: #fff; }
+
+/* line 1, modules/_featured.scss */
+section.featured {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding-top: 216px;
+  height: 677px;
+  background-image: url(/images/profile.jpg);
+  text-align: center; }
+  /* line 8, modules/_featured.scss */
+  section.featured p {
+    color: #fff;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 40px; }
+  /* line 15, modules/_featured.scss */
+  section.featured a.subtle {
+    margin-top: 215px;
+    padding: 14px 14px; }
+    /* line 19, modules/_featured.scss */
+    section.featured a.subtle span.arrow {
+      background-image: url(/images/down_arrow.png);
+      width: 14px;
+      height: 10px;
+      display: inline-block; }

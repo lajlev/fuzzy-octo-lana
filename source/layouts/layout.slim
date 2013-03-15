@@ -1,0 +1,51 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+
+    title = data.page.title || "Victor Erixons portfolio"
+    == stylesheet_link_tag "http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700", "style"
+
+  body
+    header
+      a.logo href="/"
+        img src="/images/logo.png"
+      nav
+        a.current   href="/work.html" Work
+        a           href="/about.html" About
+        a           href="/blog.html" Blog
+        a           href="/contact.html" Contact
+
+    == yield
+
+    section.highlighted
+      .tac
+        h2 My latest Tweet
+      p.tweet
+        | In case you missed my blog. I have included a night vision mode. <br>Press that moon!
+        a data-tooltip="Testing" http://victorerixon.tumblr.com/
+      a.btn.secondary href="#follow-me-on-twitter-link" Follow @victorerixon
+
+    section
+      .tac
+        h2 Connect with me
+
+      ul.tiles.small-tiles.icon-tiles
+        li: a.instagram href="#link-to-social-shit" data-tooltip="Instagram" Instagram
+        li: a.dribbble href="#link-to-social-shit" data-tooltip="Dribbble" Dribbble
+        li: a.tumblr href="#link-to-social-shit" data-tooltip="Tumblr" Tumblr
+        li: a.skype href="#link-to-social-shit" data-tooltip="Skype" Skype
+        li: a.zerply href="#link-to-social-shit" data-tooltip="Zerply" Zerply
+
+    footer
+      .wrap
+        span.copyright &copy; 2013
+        nav
+          a.current   href="/work.html" Work
+          a           href="/about.html" About
+          a           href="/blog.html" Blog
+          a           href="/contact.html" Contact
+
+
+  == javascript_include_tag "all"
+/html

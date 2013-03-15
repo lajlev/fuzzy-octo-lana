@@ -1,0 +1,33 @@
+/* Layout
+================================================== */
+
+// Border-box as default
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// The micro clearfix http://nicolasgallagher.com/micro-clearfix-hack/
+@mixin clearfix {
+  &:before, &:after {
+    content: "";
+    display: table; }
+
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin wrap {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.wrap {
+  @include wrap;
+}
+
+body > section {
+  @include wrap;
+}
