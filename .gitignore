@@ -1,7 +1,7 @@
 # For projects using middleman (http://middlemanapp.com/)
 
 # Default output directory
-build
+public
 
 # Gemfile lock file
 Gemfile.lock
