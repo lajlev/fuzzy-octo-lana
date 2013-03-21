@@ -2,14 +2,14 @@
 ================================================== */
 
 .btn {
-  border-radius: 3px;
-  color: #fff;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
   display: inline-block;
-  background: $color-primary;
   padding: 14px 24px;
+  border-radius: 25px;
+  background: $color-primary;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: $ff-secondary;
   cursor: pointer;
 
   &.alt {

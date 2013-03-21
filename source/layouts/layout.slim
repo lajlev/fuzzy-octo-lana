@@ -4,21 +4,25 @@ html
     meta charset="utf-8"
 
     title = data.page.title || "Victor Erixons portfolio"
-    == stylesheet_link_tag "http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700", "style"
+    == stylesheet_link_tag "style"
 
   body
     header
-      a.logo href="/"
-        img src="/images/logo.png"
-      nav
-        a.current   href="/work.html" Work
-        a           href="/about.html" About
-        a           href="/blog.html" Blog
-        a           href="/contact.html" Contact
+      .wrap
+        nav
+          a.current   href="/work.html" Work
+          a           href="/about.html" About
+          a           href="/blog.html" Blog
+
+        a.logo href="/"
+          img src="/images/logo-white.png"
+
+        a.btn.alt href="#Hire-me" Hire me
+
 
     == yield
 
-    section.highlighted
+    //section.highlighted
       .tac
         h2 My latest Tweet
       p.tweet
@@ -26,7 +30,7 @@ html
         a data-tooltip="Testing" http://victorerixon.tumblr.com/
       a.btn.secondary href="#follow-me-on-twitter-link" Follow @victorerixon
 
-    section
+    //section
       .tac
         h2 Connect with me
 
@@ -39,13 +43,13 @@ html
 
     footer
       .wrap
-        span.copyright &copy; 2013
         nav
           a.current   href="/work.html" Work
           a           href="/about.html" About
           a           href="/blog.html" Blog
-          a           href="/contact.html" Contact
+        span.copyright &copy; 2013
 
 
-  == javascript_include_tag "all"
+  == javascript_include_tag "//use.typekit.net/eyn2chu.js", "all"
+
 /html

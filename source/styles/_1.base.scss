@@ -24,7 +24,7 @@ img { border: 0; }
 
 body {
   font-size: 13px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: $ff-primary;
   -webkit-font-smoothing: antialiased;
   background: $bg-color;
   color: $text-color; }

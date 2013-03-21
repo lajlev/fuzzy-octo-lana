@@ -50,7 +50,7 @@ img {
 /* line 25, _1.base.scss */
 body {
   font-size: 13px;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "freight-sans-pro", sans-serif;
   -webkit-font-smoothing: antialiased;
   background: white;
   color: #211e1f; }
@@ -107,7 +107,8 @@ h2 {
 ================================================== */
 /* line 5, modules/_btn.scss */
 .btn {
-  border-radius: 3px;
+  font-family: "museo-sans", sans-serif;
+  border-radius: 25px;
   color: #fff;
   font-weight: bold;
   text-decoration: none;
@@ -116,16 +117,16 @@ h2 {
   background: #00a3cc;
   padding: 14px 24px;
   cursor: pointer; }
-  /* line 16, modules/_btn.scss */
+  /* line 17, modules/_btn.scss */
   .btn.alt {
     background: #f25b5a; }
-    /* line 19, modules/_btn.scss */
+    /* line 20, modules/_btn.scss */
     .btn.alt:hover {
       background: #f14d4c; }
-  /* line 24, modules/_btn.scss */
+  /* line 25, modules/_btn.scss */
   .btn.subtle {
     background: rgba(255, 255, 255, 0.3); }
-    /* line 27, modules/_btn.scss */
+    /* line 28, modules/_btn.scss */
     .btn.subtle:hover {
       background: rgba(255, 255, 255, 0.4); }
 
@@ -209,14 +210,16 @@ h2 {
     background-color: #8db976;
     background-position: -410px -10px; }
 
-/* line 1, modules/_header.scss */
-body > header {
-  max-width: 1020px;
-  margin: 0 auto; }
-
-/* line 5, modules/_header.scss */
+/* line 3, modules/_header-footer.scss */
 body > header, body > footer {
-  padding: 28px 40px 28px; }
+  font-size: 15px;
+  font-family: "museo-sans", sans-serif;
+  font-weight: 700;
+  width: 100%;
+  background: #1c1f23;
+  height: 83px;
+  text-align: center;
+  padding: 20px 40px 0; }
   /* line 13, _2.layout.scss */
   body > header:before, body > header:after, body > footer:before, body > footer:after {
     content: "";
@@ -224,43 +227,36 @@ body > header, body > footer {
   /* line 17, _2.layout.scss */
   body > header:after, body > footer:after {
     clear: both; }
-  /* line 9, modules/_header.scss */
+  /* line 15, modules/_header-footer.scss */
   body > header a.logo, body > footer a.logo {
-    display: block;
-    width: 70px;
-    float: left; }
-  /* line 15, modules/_header.scss */
+    margin-top: 8px;
+    display: inline-block;
+    width: 70px; }
+  /* line 21, modules/_header-footer.scss */
   body > header nav, body > footer nav {
-    float: right; }
-    /* line 18, modules/_header.scss */
+    float: left; }
+    /* line 24, modules/_header-footer.scss */
     body > header nav a, body > footer nav a {
-      font-weight: bold;
-      font-size: 13px;
-      color: #211e1f;
+      color: white;
       text-decoration: none;
-      text-transform: uppercase;
-      margin-right: 35px;
+      margin-right: 40px;
       display: inline-block;
-      padding: 5px 3px; }
-      /* line 30, modules/_header.scss */
+      padding: 15px 3px 15px 0; }
+      /* line 32, modules/_header-footer.scss */
       body > header nav a:hover, body > header nav a.current, body > footer nav a:hover, body > footer nav a.current {
-        color: #00a3cc;
-        border-bottom: 2px solid #00a3cc; }
-      /* line 35, modules/_header.scss */
+        color: #00a3cc; }
+      /* line 36, modules/_header-footer.scss */
       body > header nav a:last-child, body > footer nav a:last-child {
         margin-right: 0; }
+  /* line 41, modules/_header-footer.scss */
+  body > header .btn, body > footer .btn {
+    float: right; }
 
-/* line 1, modules/_footer.scss */
-body > footer {
-  width: 100%;
-  background: #000; }
-  /* line 5, modules/_footer.scss */
-  body > footer span.copyright {
-    font-weight: bold;
-    color: #fff; }
-  /* line 11, modules/_footer.scss */
-  body > footer nav a {
-    color: #fff; }
+/* line 49, modules/_header-footer.scss */
+body > footer span.copyright {
+  float: right;
+  color: white;
+  padding: 15px 3px 15px 0; }
 
 /* line 1, modules/_featured.scss */
 section.featured {
