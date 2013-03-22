@@ -1,17 +1,16 @@
 /*
-Syntax error: Undefined variable: "$ff-secondary".
-        on line 6 of /Users/lajlev/Sites/victor-portfolio/source/styles/modules/_btn.scss
+Syntax error: Undefined variable: "$color-primary".
+        on line 9 of /Users/lajlev/Sites/victor-portfolio/source/styles/modules/_btn.scss
         from line 2 of /Users/lajlev/Sites/victor-portfolio/source/styles/modules/modules.scss
 
-1: @import
-2: "_btn",
-3: "_tiles",
-4: "_tooltip",
-5: "_header-footer",
-6: "_featured";
+4: "tooltip",
+5: "down-arrow",
+6: "timeline",
+7: "header-footer",
+8: "featured";
 
 Backtrace:
-/Users/lajlev/Sites/victor-portfolio/source/styles/modules/_btn.scss:6
+/Users/lajlev/Sites/victor-portfolio/source/styles/modules/_btn.scss:9
 /Users/lajlev/Sites/victor-portfolio/source/styles/modules/modules.scss:2
 /Users/lajlev/.rvm/gems/ruby-1.9.3-p194@rails328/gems/sass-3.2.5/lib/sass/script/variable.rb:49:in `_perform'
 /Users/lajlev/.rvm/gems/ruby-1.9.3-p194@rails328/gems/sass-3.2.5/lib/sass/script/node.rb:40:in `perform'
@@ -108,4 +107,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$ff-secondary\".\A         on line 6 of /Users/lajlev/Sites/victor-portfolio/source/styles/modules/_btn.scss\A         from line 2 of /Users/lajlev/Sites/victor-portfolio/source/styles/modules/modules.scss\A \A 1: @import\A 2: \"_btn\",\A 3: \"_tiles\",\A 4: \"_tooltip\",\A 5: \"_header-footer\",\A 6: \"_featured\";"; }
+  content: "Syntax error: Undefined variable: \"$color-primary\".\A         on line 9 of /Users/lajlev/Sites/victor-portfolio/source/styles/modules/_btn.scss\A         from line 2 of /Users/lajlev/Sites/victor-portfolio/source/styles/modules/modules.scss\A \A 4: \"tooltip\",\A 5: \"down-arrow\",\A 6: \"timeline\",\A 7: \"header-footer\",\A 8: \"featured\";"; }

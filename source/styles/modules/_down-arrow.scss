@@ -1,0 +1,23 @@
+.down-arrow {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box; width: 33px;
+  height: 33px;
+  border: solid 2px rgba(255, 255, 255, .2);
+  border-radius: 33px;
+
+  &:after{
+    @include transform( rotate(45deg) );
+    position: relative;
+    top: 10px; left: 10px;
+    display: block;
+    width: 9px; height: 9px;
+    border: solid rgba(255, 255, 255, .2);
+    border-width: 0 4px 4px 0;
+    content: '';
+  }
+
+  &:hover, &:hover:after {
+    border-color: rgba(255, 255, 255, .4);
+  }
+}

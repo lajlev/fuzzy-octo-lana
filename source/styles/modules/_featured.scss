@@ -6,11 +6,9 @@ section.featured {
   text-align: center;
 
   h1, h2 {
-    color: #fff;
-    padding: 0;
-  }
+    padding: 0; }
 
-  h1 {
+  h1 { // create an arrow beneath
 
     &:after {
       content:'';
@@ -22,14 +20,8 @@ section.featured {
     }
   }
 
-
-  a.down-arrow {
-    margin-top: 31px;
-    background-image: url(/images/down-arrow.png);
-    width: 33px;
-    height: 33px;
-    display: inline-block;
-  }
+  .down-arrow {
+    margin-top: 30px; }
 
   .about & {
     background-image: url(/images/about-1.jpg);

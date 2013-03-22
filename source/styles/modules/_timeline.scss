@@ -1,0 +1,84 @@
+.timeline {
+  @include wrap;
+  padding: 20px 40px 0;
+
+  ul {
+    position: relative;
+    padding-left: 0;
+    list-style-type: none;
+
+    &:before{
+      position: absolute;
+      left:26px;
+      z-index: -1;
+      display: block;
+      width: 2px;
+      height: 100%;
+      background: #$subtle-color;
+      content:'';
+    }
+  }
+
+  li {
+    margin: 0;
+    padding: 0; }
+
+  .year, .more {
+    @include border-radius(52px);
+    position: relative;
+    display: block;
+    padding: 14px 0 0 12px;
+    width: 52px; height: 52px;
+    border: 2px solid #$subtle-color;
+    background: $bg-color;
+    font-weight: 700;
+    font-size: 13px;
+  }
+
+  .year {
+    margin-bottom: 40px;
+  }
+
+  .more {
+    &:before, &:after {
+      position: absolute;
+      display: block;
+      background: #$subtle-color;
+      content:''; }
+
+    &:before { top: 16px;
+      left: 24px;
+      width: 2px; height: 16px;}
+
+    &:after { top: 23px;
+      left: 17px;
+      width: 16px; height: 2px;
+    }
+
+    &:hover:before, &:hover:after {
+
+    }
+  }
+
+  .event {
+    @include clearfix;
+    margin-bottom: 20px;
+
+    .inner {
+      display: block;
+      float: left;
+      width: 300px;
+      margin-left: 40px; }
+
+    &:before {
+      display: block;
+      float: left;
+      margin-left: 3px;
+      padding: 8px;
+      width: 48px; height: 48px;
+      background: $bg-color url('/images/timeline-item.png') no-repeat;
+      background-position:center;
+      content:'';
+    }
+  }
+}
