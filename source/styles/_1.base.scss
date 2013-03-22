@@ -23,8 +23,7 @@ img { border: 0; }
 
 
 body {
-  font-size: 13px;
-  font-family: $ff-primary;
+  font: $font-primary;
   -webkit-font-smoothing: antialiased;
   background: $bg-color;
   color: $text-color; }
@@ -41,29 +40,40 @@ a {
   width: 100%;
 }
 
-.highlighted {
-  @include clearfix;
-  background: $bg-color-alt;
-  text-align: center;
-  padding-bottom: 70px;
+// .highlighted {
+//   @include clearfix;
+//   background: $bg-color-alt;
+//   text-align: center;
+//   padding-bottom: 70px;
 
-  p {
-    font-weight: 300;
-    font-size: 28px;
-    line-height: 40px;
-    margin-bottom: 60px;
+//   p {
+//     font-weight: 300;
+//     font-size: 28px;
+//     line-height: 40px;
+//     margin-bottom: 60px;
+//   }
+// }
+
+h1 {
+  font: $font-big;
+  text-transform: uppercase;
+  margin: 0 0 1px; }
+
+h2 {
+  font: $font-primary;
+  color: $text-color;
+
+  &.subheader {
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+    line-height: 26px;
   }
 }
 
-h2 {
-  font-weight: bold;
-  font-size: 13px;
-  color: $text-color;
-  text-decoration: none;
-  text-transform: uppercase;
+hr {
   display: inline-block;
-  padding: 5px 3px;
-  border-bottom: 2px solid $text-color;
-  margin: 80px 0 60px;
+  border: none;
+  margin: 0;
 }
 

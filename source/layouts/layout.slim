@@ -6,7 +6,7 @@ html
     title = data.page.title || "Victor Erixons portfolio"
     == stylesheet_link_tag "style"
 
-  body
+  body class="#{page_classes}"
     header
       .wrap
         nav
@@ -21,14 +21,6 @@ html
 
 
     == yield
-
-    //section.highlighted
-      .tac
-        h2 My latest Tweet
-      p.tweet
-        | In case you missed my blog. I have included a night vision mode. <br>Press that moon!
-        a data-tooltip="Testing" http://victorerixon.tumblr.com/
-      a.btn.secondary href="#follow-me-on-twitter-link" Follow @victorerixon
 
     //section
       .tac
