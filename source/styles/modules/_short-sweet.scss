@@ -1,0 +1,19 @@
+.short-sweet {
+  background: url(/images/about-2.jpg);
+  height: 745px;
+  .inner {
+    background: rgba(12, 14, 16, .95);
+    padding: 50px 60px 40px;
+    @include clearfix;
+  }
+  p {
+    line-height: 24px;
+    float:left;
+    width: 46%;
+    margin-right: 8%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

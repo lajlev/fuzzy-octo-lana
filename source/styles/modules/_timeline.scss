@@ -14,7 +14,7 @@
       display: block;
       width: 2px;
       height: 100%;
-      background: $subtle-color;
+      background: $color-subtle;
       content:'';
     }
   }
@@ -29,7 +29,7 @@
     display: block;
     padding: 14px 0 0 12px;
     width: 52px; height: 52px;
-    border: 2px solid $subtle-color;
+    border: 2px solid $color-subtle;
     background: $bg-color;
     font-weight: 700;
     font-size: 13px;
@@ -43,7 +43,7 @@
     &:before, &:after {
       position: absolute;
       display: block;
-      background: $subtle-color;
+      background: $color-subtle;
       content:''; }
 
     &:before { top: 16px;
@@ -79,7 +79,7 @@
       display: block;
       float: left;
       margin-left: 40px;
-      width: 490px;
+      max-width: 490px;
       background: #f0f2f4;
       position: relative;
 
