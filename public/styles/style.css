@@ -25,13 +25,13 @@ html, body, div, form, fieldset, legend, label {
 
 /* line 8, _1.base.scss */
 table {
-  border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+  border-collapse: collapse; }
 
 /* line 12, _1.base.scss */
 th, td {
-  text-align: left;
-  vertical-align: top; }
+  vertical-align: top;
+  text-align: left; }
 
 /* line 16, _1.base.scss */
 h1, h2, h3, h4, h5, h6, th, td, caption {
@@ -43,16 +43,16 @@ img {
 
 /* line 21, _1.base.scss */
 * {
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 /* line 25, _1.base.scss */
 body {
-  font: 400 17px/1em "freight-sans-pro", sans-serif;
-  -webkit-font-smoothing: antialiased;
   background: #1c1f23;
-  color: white; }
+  color: white;
+  font: 400 17px/1em "freight-sans-pro", sans-serif;
+  -webkit-font-smoothing: antialiased; }
 
 /* line 31, _1.base.scss */
 p {
@@ -64,31 +64,45 @@ a {
 
 /* line 38, _1.base.scss */
 .tac {
-  text-align: center;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
 
 /* line 57, _1.base.scss */
 h1 {
-  font: 300 62px/1em "freight-sans-pro", sans-serif;
+  margin: 0 0 1px;
   text-transform: uppercase;
-  margin: 0 0 1px; }
+  font: 300 62px/1em "freight-sans-pro", sans-serif; }
 
 /* line 62, _1.base.scss */
 h2 {
+  margin: 0;
+  padding: 0;
+  color: white;
   font: 400 17px/1em "freight-sans-pro", sans-serif;
-  color: white; }
-  /* line 66, _1.base.scss */
+  font-size: 30px; }
+  /* line 69, _1.base.scss */
+  h2.underline:after {
+    display: block;
+    width: 150px;
+    height: 2px;
+    margin: 15px 0;
+    background: #32363b;
+    content: ''; }
+    /* line 76, _1.base.scss */
+    .tac h2.underline:after {
+      margin: 15px auto; }
+  /* line 84, _1.base.scss */
   h2.subheader {
     margin: 0;
     padding: 0;
     font-size: 26px;
     line-height: 26px; }
 
-/* line 74, _1.base.scss */
+/* line 92, _1.base.scss */
 hr {
   display: inline-block;
-  border: none;
-  margin: 0; }
+  margin: 0;
+  border: none; }
 
 /* States
 ================================================== */
@@ -148,7 +162,7 @@ hr {
 
 /* line 25, modules/_tiles.scss */
 .large-tiles {
-  margin: 0 40px 50px 40px; }
+  margin: 100px 60px 50px; }
   /* line 28, modules/_tiles.scss */
   .large-tiles li {
     margin-right: 20px;
@@ -162,43 +176,6 @@ hr {
       /* line 39, modules/_tiles.scss */
       .large-tiles li a img {
         margin-bottom: 30px; }
-
-/* line 46, modules/_tiles.scss */
-.small-tiles {
-  margin: 0 40px 120px 40px; }
-  /* line 48, modules/_tiles.scss */
-  .small-tiles li {
-    margin-right: 122px; }
-    /* line 51, modules/_tiles.scss */
-    .small-tiles li:last-child {
-      margin-right: 0; }
-  /* line 56, modules/_tiles.scss */
-  .small-tiles a {
-    height: 90px;
-    width: 90px;
-    border-radius: 3px;
-    text-indent: -9999px;
-    background: url("/images/sprite_social_icons.png") 0 0 no-repeat; }
-  /* line 64, modules/_tiles.scss */
-  .small-tiles .instagram {
-    background-color: #3f729b;
-    background-position: -10px -10px; }
-  /* line 65, modules/_tiles.scss */
-  .small-tiles .dribbble {
-    background-color: #ea4c89;
-    background-position: -110px -10px; }
-  /* line 66, modules/_tiles.scss */
-  .small-tiles .tumblr {
-    background-color: #2c4762;
-    background-position: -210px -10px; }
-  /* line 67, modules/_tiles.scss */
-  .small-tiles .skype {
-    background-color: #00aff0;
-    background-position: -310px -10px; }
-  /* line 68, modules/_tiles.scss */
-  .small-tiles .zerply {
-    background-color: #8db976;
-    background-position: -410px -10px; }
 
 /* line 1, modules/_down-arrow.scss */
 .down-arrow {
@@ -230,13 +207,17 @@ hr {
 .timeline {
   max-width: 1220px;
   margin: 0 auto;
-  padding: 20px 40px 0; }
+  padding: 20px 40px 30px; }
   /* line 5, modules/_timeline.scss */
   .timeline ul {
     position: relative;
     padding-left: 0;
     list-style-type: none; }
-    /* line 10, modules/_timeline.scss */
+    @media (min-width: 1220px) {
+      /* line 5, modules/_timeline.scss */
+      .timeline ul {
+        left: 524px; } }
+    /* line 13, modules/_timeline.scss */
     .timeline ul:before {
       position: absolute;
       left: 26px;
@@ -246,11 +227,11 @@ hr {
       height: 100%;
       background: #32363b;
       content: ''; }
-  /* line 22, modules/_timeline.scss */
+  /* line 25, modules/_timeline.scss */
   .timeline li {
     margin: 0;
     padding: 0; }
-  /* line 26, modules/_timeline.scss */
+  /* line 29, modules/_timeline.scss */
   .timeline .year, .timeline .more {
     -webkit-border-radius: 52px;
     border-radius: 52px;
@@ -263,28 +244,28 @@ hr {
     background: #1c1f23;
     font-weight: 700;
     font-size: 13px; }
-  /* line 38, modules/_timeline.scss */
+  /* line 41, modules/_timeline.scss */
   .timeline .year {
     margin-bottom: 40px; }
-  /* line 43, modules/_timeline.scss */
+  /* line 46, modules/_timeline.scss */
   .timeline .more:before, .timeline .more:after {
     position: absolute;
     display: block;
     background: #32363b;
     content: ''; }
-  /* line 49, modules/_timeline.scss */
+  /* line 52, modules/_timeline.scss */
   .timeline .more:before {
     top: 16px;
     left: 24px;
     width: 2px;
     height: 16px; }
-  /* line 53, modules/_timeline.scss */
+  /* line 56, modules/_timeline.scss */
   .timeline .more:after {
     top: 23px;
     left: 17px;
     width: 16px;
     height: 2px; }
-  /* line 63, modules/_timeline.scss */
+  /* line 65, modules/_timeline.scss */
   .timeline .event {
     margin-bottom: 30px; }
     /* line 13, _2.layout.scss */
@@ -294,7 +275,7 @@ hr {
     /* line 17, _2.layout.scss */
     .timeline .event:after {
       clear: both; }
-    /* line 67, modules/_timeline.scss */
+    /* line 69, modules/_timeline.scss */
     .timeline .event:before {
       display: block;
       float: left;
@@ -305,42 +286,43 @@ hr {
       background: #1c1f23 url("/images/timeline-item.png") no-repeat;
       background-position: center;
       content: ''; }
-    /* line 77, modules/_timeline.scss */
+    /* line 79, modules/_timeline.scss */
     .timeline .event > .inner {
       -webkit-border-radius: 3px;
       border-radius: 3px;
+      position: relative;
+      top: -5px;
       display: block;
       float: left;
       margin-left: 40px;
-      width: 490px;
-      background: #f0f2f4;
-      position: relative; }
-      /* line 86, modules/_timeline.scss */
+      max-width: 490px;
+      background: #f0f2f4; }
+      /* line 89, modules/_timeline.scss */
       .timeline .event > .inner:before {
         position: absolute;
         top: 24px;
         left: -8px;
-        content: '';
         display: block;
-        height: 0;
         width: 0;
+        height: 0;
         border-top: 8px solid transparent;
         border-right: 8px solid #00a3cc;
-        border-bottom: 8px solid transparent; }
-    /* line 99, modules/_timeline.scss */
+        border-bottom: 8px solid transparent;
+        content: ''; }
+    /* line 101, modules/_timeline.scss */
     .timeline .event h3 {
       -webkit-border-radius: 3px 3px 0 0;
       border-radius: 3px 3px 0 0;
       margin: 0;
       padding: 25px;
       background: #00a3cc; }
-    /* line 108, modules/_timeline.scss */
+    /* line 107, modules/_timeline.scss */
     .timeline .event p {
       margin-bottom: 0;
       padding: 25px 25px 15px 25px;
       color: #474b51;
       line-height: 24px; }
-    /* line 114, modules/_timeline.scss */
+    /* line 113, modules/_timeline.scss */
     .timeline .event .bottom {
       padding: 0 25px 25px; }
       /* line 13, _2.layout.scss */
@@ -350,24 +332,146 @@ hr {
       /* line 17, _2.layout.scss */
       .timeline .event .bottom:after {
         clear: both; }
-    /* line 119, modules/_timeline.scss */
+    /* line 117, modules/_timeline.scss */
     .timeline .event a.read-more, .timeline .event time {
       color: #828890;
       text-transform: uppercase;
       font-weight: bold;
       font-size: 13px; }
-    /* line 126, modules/_timeline.scss */
+    /* line 123, modules/_timeline.scss */
     .timeline .event a.read-more:hover {
       color: #70767e; }
-    /* line 129, modules/_timeline.scss */
+    /* line 126, modules/_timeline.scss */
     .timeline .event time {
       float: right; }
-    /* line 135, modules/_timeline.scss */
+    /* line 129, modules/_timeline.scss */
     .timeline .event.alternative h3 {
       background: #f25b5a; }
-    /* line 138, modules/_timeline.scss */
-    .timeline .event.alternative > .inner:before {
-      border-right: 8px solid #f25b5a; }
+    /* line 132, modules/_timeline.scss */
+    .timeline .event.alternative > .inner {
+      left: -610px; }
+      /* line 135, modules/_timeline.scss */
+      .timeline .event.alternative > .inner:before {
+        top: 24px;
+        right: -8px;
+        left: auto;
+        border-top: 8px solid transparent;
+        border-right: none;
+        border-bottom: 8px solid transparent;
+        border-left: 8px solid #f25b5a; }
+
+/* line 1, modules/_data.scss */
+.data {
+  padding: 50px 60px 40px;
+  background: #101215; }
+
+/* line 8, modules/_data.scss */
+.soundbar {
+  padding: 0;
+  display: table-cell;
+  border-spacing: 0;
+  border-collapse: collapse; }
+  /* line 14, modules/_data.scss */
+  .soundbar li {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 14px;
+    margin-right: 0;
+    border-radius: 3px; }
+    /* line 22, modules/_data.scss */
+    .soundbar li:nth-child(1) {
+      background: #0386a7;
+      height: 40px; }
+    /* line 23, modules/_data.scss */
+    .soundbar li:nth-child(2) {
+      background: #00a3cc;
+      height: 50px; }
+    /* line 24, modules/_data.scss */
+    .soundbar li:nth-child(3) {
+      background: #0386a7;
+      height: 40px; }
+    /* line 25, modules/_data.scss */
+    .soundbar li:nth-child(4) {
+      background: #0386a7;
+      height: 40px; }
+    /* line 26, modules/_data.scss */
+    .soundbar li:nth-child(5) {
+      background: #0386a7;
+      height: 40px; }
+    /* line 27, modules/_data.scss */
+    .soundbar li:nth-child(6) {
+      background: #0386a7;
+      height: 40px; }
+    /* line 28, modules/_data.scss */
+    .soundbar li:nth-child(7) {
+      background: #0386a7;
+      height: 40px; }
+
+/* line 1, modules/_social.scss */
+.social {
+  margin-top: 100px; }
+  /* line 4, modules/_social.scss */
+  .social h2.underline:after {
+    width: 100px; }
+  /* line 8, modules/_social.scss */
+  .social ul.icons {
+    margin: 60px 60px 160px;
+    list-style-type: none;
+    padding: 0; }
+    /* line 13, modules/_social.scss */
+    .social ul.icons li {
+      display: inline-block;
+      margin-right: 158px; }
+      /* line 16, modules/_social.scss */
+      .social ul.icons li:last-child {
+        margin-right: 0; }
+      /* line 18, modules/_social.scss */
+      .social ul.icons li a {
+        display: inline-block;
+        width: 90px;
+        height: 90px;
+        border-radius: 90px;
+        border: 2px solid #32363b; }
+        /* line 24, modules/_social.scss */
+        .social ul.icons li a:after {
+          display: block;
+          width: 32px;
+          height: 32px;
+          margin: 29px;
+          background: url(/images/social-icon.png);
+          content: ''; }
+        /* line 31, modules/_social.scss */
+        .social ul.icons li a:hover {
+          border: 2px solid #3f729b;
+          background: #3f729b; }
+          /* line 35, modules/_social.scss */
+          .social ul.icons li a:hover:after {
+            background: url(/images/social-icon-hover.png); }
+
+/* line 1, modules/_short-sweet.scss */
+.short-sweet {
+  background: url(/images/about-2.jpg);
+  height: 745px; }
+  /* line 4, modules/_short-sweet.scss */
+  .short-sweet .inner {
+    background: rgba(12, 14, 16, 0.95);
+    padding: 50px 60px 40px; }
+    /* line 13, _2.layout.scss */
+    .short-sweet .inner:before, .short-sweet .inner:after {
+      content: "";
+      display: table; }
+    /* line 17, _2.layout.scss */
+    .short-sweet .inner:after {
+      clear: both; }
+  /* line 9, modules/_short-sweet.scss */
+  .short-sweet p {
+    line-height: 24px;
+    float: left;
+    width: 46%;
+    margin-right: 8%; }
+    /* line 15, modules/_short-sweet.scss */
+    .short-sweet p:last-child {
+      margin-right: 0; }
 
 /* line 3, modules/_header-footer.scss */
 body > header, body > footer {
@@ -440,3 +544,6 @@ section.featured {
   /* line 26, modules/_featured.scss */
   .about section.featured {
     background-image: url(/images/about-1.jpg); }
+  /* line 29, modules/_featured.scss */
+  .index section.featured {
+    background-image: url(/images/home-1.jpg); }

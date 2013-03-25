@@ -24,6 +24,9 @@ section.featured {
     margin-top: 30px; }
 
   .about & {
-    background-image: url(/images/about-1.jpg);
+    background-image: url(/images/about-1.jpg); }
+
+  .index & {
+    background-image: url(/images/home-1.jpg);
   }
 }

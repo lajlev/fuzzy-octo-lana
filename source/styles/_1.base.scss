@@ -72,7 +72,14 @@ h2 {
     margin: 15px 0;
     background: $color-subtle;
     content: '';
+
+    .tac & {
+      margin: 15px auto;
+
+    }
   }
+
+
 
   &.subheader {
     margin: 0;

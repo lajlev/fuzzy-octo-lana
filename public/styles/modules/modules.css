@@ -6,8 +6,11 @@ Syntax error: Undefined variable: "$color-primary".
 4: "tooltip",
 5: "down-arrow",
 6: "timeline",
-7: "header-footer",
-8: "featured";
+7: "data",
+8: "social",
+9: "short-sweet",
+10: "header-footer",
+11: "featured";
 
 Backtrace:
 /Users/lajlev/Sites/victor-portfolio/source/styles/modules/_btn.scss:9
@@ -107,4 +110,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$color-primary\".\A         on line 9 of /Users/lajlev/Sites/victor-portfolio/source/styles/modules/_btn.scss\A         from line 2 of /Users/lajlev/Sites/victor-portfolio/source/styles/modules/modules.scss\A \A 4: \"tooltip\",\A 5: \"down-arrow\",\A 6: \"timeline\",\A 7: \"header-footer\",\A 8: \"featured\";"; }
+  content: "Syntax error: Undefined variable: \"$color-primary\".\A         on line 9 of /Users/lajlev/Sites/victor-portfolio/source/styles/modules/_btn.scss\A         from line 2 of /Users/lajlev/Sites/victor-portfolio/source/styles/modules/modules.scss\A \A 4: \"tooltip\",\A 5: \"down-arrow\",\A 6: \"timeline\",\A 7: \"data\",\A 8: \"social\",\A 9: \"short-sweet\",\A 10: \"header-footer\",\A 11: \"featured\";"; }
