@@ -1,13 +1,12 @@
-# For projects using middleman (http://middlemanapp.com/)
+# Ignore bundler config
+/.bundle
 
-# Default output directory
-public
+# Ignore Sass' cache
+/.sass-cache
 
-# Gemfile lock file
-Gemfile.lock
+# Ignore the build directory
+/public
 
-# Bundler cache and config
-.bundle
+# Ignore components directory. Will need to change this if you change bower's install path
+/components
 
-# Sass' cache
-.sass-cache
