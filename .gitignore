@@ -7,8 +7,5 @@
 # Ignore the build directory
 /public
 
-# Ignore the design directory
-/design
-
 # Ignore components directory. Will need to change this if you change bower's install path
 /components
